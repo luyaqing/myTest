@@ -15,7 +15,7 @@ public class ThreadLocalTest {
     };*/
 
     // 这里定义为 static 使他变成 强引用，最后调用 remove方法的时候，可以删除掉，
-    // 不加的话，它是弱引用，Entry的键会变成null了，垃圾回收的话，无法回收掉。 所以最后要掉remove方法
+    // 不加的话，它是弱引用，Entry的键会变成null了，垃圾回收的话，无法回收掉。 所以最后要调remove方法
     private static ThreadLocal<Integer> threadLocal = new ThreadLocal<>();
 
 
