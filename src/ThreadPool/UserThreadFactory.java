@@ -28,7 +28,6 @@ public class UserThreadFactory implements ThreadFactory {
 class Task implements Runnable {
     private final AtomicLong count = new AtomicLong(0L);
 
-
     @Override
     public void run() {
         System.out.println("running_" + count.getAndIncrement());
